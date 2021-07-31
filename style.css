@@ -21,7 +21,6 @@ a{
 
 body{
     width:100%;
-    overflow-x: hidden;
 }
 
 button {
@@ -140,6 +139,7 @@ button {
     font-family: var(--heading-font);
     font-size: 2.5rem;
     color: var(--heading-color);
+    text-align: center;
 }
 
 .content-header .content-text{
@@ -391,11 +391,9 @@ button {
 }
 .testimonial-main-profile .testimonials-job {
     font-family: var(--primary-font);
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    letter-spacing: 0em;
     text-align: left;
 }
 
@@ -511,19 +509,21 @@ button {
     }
     @media only screen and (max-width: 600px) {
         
-        
-
+       html, body {
+            overflow-x: hidden;
+            width: 100%;
+        }
         #header .logo {
-            width:130px;
-            height:50px;
+            width:90px;
+            height:40px;
 }
         .nav-links .nav-btn-1 {
-            font-size: 1.2rem;
+            font-size: .8rem;
             
         }
 
         .nav-links .nav-btn-2 {
-            font-size: 1rem;
+            font-size: .5rem;
         } 
 
         .header-text p {
@@ -547,25 +547,46 @@ button {
             align-items: center;
         }
         
+        .content-header .content-heading {
+            font-size: 1.6rem;
+        }
+        .content-header .content-text{
+            font-size:1rem;
+            width: 85%;
+        }
+        .content-body .content-body-main {
+            width:40%;
+        }
+        .content-body-main .main-1 {
+            height:170px;
+        }
+        .main-1 h3{
+            font-size:.8rem;
+        
+        }
+        .main-1 p {
+            font-size:.6rem;
+
+        }
+
         #showcase {
-            grid-template-rows: 200px repeat(3,100vh);
+            grid-template-rows: 100px repeat(3,100vh);
         }   
         #showcase .showcase-header {
-            width:85%;
-            margin: auto;
+            width:100%;
         }
         .showcase-header h1 {
-            font-size:2rem;
+            font-size:1.4rem;
         } 
 
         .showcase-group {
             width:100%;
-            padding:0px;
+            padding:0;
             flex-direction:column;
         }
 
         .showcase-group  .showcase-img {
-            width:350px;
+            width:220px;
     
         }
 
@@ -587,12 +608,12 @@ button {
         }
 
         .showcase-group-1 .showcase-sub-heading {
-          font-size:1.2rem;
+          font-size:.8rem;
           text-align: center;
         }
 
         .showcase-group-1 .showcase-text {
-            font-size: 1rem;
+            font-size: .8rem;
             text-align:center;
         }
 
@@ -606,7 +627,14 @@ button {
         .testimonials-main-group .testimonial-btn-group{
             padding: 15px;
         }
+        .testimonials-heading h3{
+            font-size: 24px;
+        }
+        
 
+        #footer {
+            height: 80vh;
+        }
     }
 
 }
